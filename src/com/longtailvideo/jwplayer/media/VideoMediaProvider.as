@@ -186,7 +186,13 @@
 
 		/** Seek to a new position. **/
 		override public function seek(pos:Number):void {
-			seekStream(pos, false);
+			switch(state){
+				case PlayerState.PAUSED: seekStream(pos, false);
+										 positionHandler();
+											break;
+				default: seekStream(pos);
+						 break;
+			}
 		}
 		
 		private function seekStream(pos:Number, ply:Boolean=true):void {
