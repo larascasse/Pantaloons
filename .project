@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Pantaloons_Beta</name>
-	<comment/>
+	<name>PANTALOONS</name>
+	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -10,9 +10,21 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>com.powerflasher.fdt.core.FlashBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+		<nature>com.powerflasher.fdt.core.FlashNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>FLex_frameworks</name>
+			<type>2</type>
+			<locationURI>FLex_frameworks</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
-
